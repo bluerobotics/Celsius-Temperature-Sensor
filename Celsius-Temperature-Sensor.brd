@@ -26,8 +26,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -171,6 +171,18 @@
 <wire x1="11.90124375" y1="9.001228125" x2="9.12624375" y2="9.001228125" width="0.025" layer="20"/>
 <wire x1="11.90124375" y1="0.001228125" x2="11.90124375" y2="9.001228125" width="0.025" layer="20"/>
 <wire x1="0.00124375" y1="0.001228125" x2="11.90124375" y2="0.001228125" width="0.025" layer="20"/>
+<text x="2.9824625" y="6.444446875" size="0.8128" layer="22" rot="MR0">BLK
+GND</text>
+<text x="5.61671875" y="6.807515625" size="0.8128" layer="22" rot="MR0">RED
+VCC</text>
+<text x="8.3418125" y="6.83776875" size="0.8128" layer="22" rot="MR0">GRN
+SCL</text>
+<text x="10.97606875" y="6.414190625" size="0.8128" layer="22" rot="MR0">WHT
+SDA</text>
+<text x="7.8272625" y="17.26083125" size="0.8128" layer="21" rot="R270">BlueRobotics</text>
+<text x="3.97615625" y="13.02396875" size="0.6096" layer="21" rot="R90" align="center">Celsius Temp
+Sensor</text>
+<text x="6.032265625" y="22.13015625" size="0.6096" layer="21" align="center">rev1</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -1795,7 +1807,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$4" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="4.660484375" y="5.0658" rot="MR90"/>
 <element name="U$5" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="7.3025" y="5.08" rot="MR270"/>
 <element name="U$6" library="BR-Eagle-Library" package="PAD-1.5X3MM" value="PAD1.5X3MM" x="10.00125" y="4.60375" rot="MR270"/>
-<element name="U$7" library="BR-Eagle-Library" package="BR-LOGO-SMALL" value="LOGOBR-LOGO-S" x="4.759621875" y="11.840525"/>
+<element name="U$7" library="BR-Eagle-Library" package="BR-LOGO-SMALL" value="LOGOBR-LOGO-S" x="7.573475" y="11.63916875" rot="R90"/>
 <element name="U$8" library="BR-Eagle-Library" package="QFN16-4X4" value="TSYS01QFN" x="6.0009625" y="19.11965625" smashed="yes" rot="R90"/>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="2.62366875" y="2.605415625" smashed="yes" rot="R180"/>
 <element name="R6" library="resistor" package="R0402" value="10K" x="1.74625" y="5.08" smashed="yes" rot="R90"/>
@@ -1913,11 +1925,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.74625" y1="7.167484375" x2="1.5725" y2="7.341234375" width="0.254" layer="1"/>
 <wire x1="4.0009625" y1="18.79465625" x2="4.0009625" y2="18.14465625" width="0.254" layer="1"/>
 <wire x1="4.45944375" y1="5.87345625" x2="4.49415" y2="5.83875" width="0.254" layer="1"/>
-<wire x1="4.0009625" y1="18.14465625" x2="4.0009625" y2="10.277678125" width="0.254" layer="1"/>
-<wire x1="4.0009625" y1="10.277678125" x2="3.66125625" y2="9.937971875" width="0.254" layer="1"/>
-<wire x1="3.66125625" y1="9.937971875" x2="3.66125625" y2="7.995846875" width="0.254" layer="1"/>
 <wire x1="3.66125625" y1="7.995846875" x2="4.45944375" y2="7.197659375" width="0.254" layer="1"/>
 <wire x1="4.45944375" y1="7.197659375" x2="4.45944375" y2="5.87345625" width="0.254" layer="1"/>
+<wire x1="3.66125625" y1="7.995846875" x2="3.66125625" y2="9.442159375" width="0.254" layer="1"/>
+<wire x1="3.66125625" y1="9.442159375" x2="4.3636" y2="10.144503125" width="0.254" layer="1"/>
+<wire x1="4.3636" y1="10.144503125" x2="4.3636" y2="16.605378125" width="0.254" layer="1"/>
+<wire x1="4.3636" y1="16.605378125" x2="4.0078" y2="16.961178125" width="0.254" layer="1"/>
+<wire x1="4.0078" y1="16.961178125" x2="4.0078" y2="18.13781875" width="0.254" layer="1"/>
+<wire x1="4.0078" y1="18.13781875" x2="4.0009625" y2="18.14465625" width="0.254" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R3" pad="2"/>
@@ -2005,4 +2020,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
