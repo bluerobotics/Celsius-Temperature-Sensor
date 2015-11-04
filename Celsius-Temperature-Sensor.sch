@@ -148,20 +148,6 @@
 <libraries>
 <library name="BR-Eagle-Library">
 <packages>
-<package name="SOD523">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="-0.59" y1="0.4" x2="0.59" y2="0.4" width="0.1016" layer="51"/>
-<wire x1="0.59" y1="0.4" x2="0.59" y2="-0.4" width="0.1016" layer="51"/>
-<wire x1="0.59" y1="-0.4" x2="-0.59" y2="-0.4" width="0.1016" layer="51"/>
-<wire x1="-0.59" y1="-0.4" x2="-0.59" y2="0.4" width="0.1016" layer="51"/>
-<smd name="A" x="0.7" y="0" dx="0.7" dy="0.5" layer="1"/>
-<smd name="C" x="-0.6" y="0" dx="0.7" dy="0.5" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.75" y1="-0.17" x2="-0.54" y2="0.17" layer="51"/>
-<rectangle x1="0.54" y1="-0.17" x2="0.75" y2="0.17" layer="51"/>
-<rectangle x1="-0.59" y1="-0.4" x2="-0.3" y2="0.4" layer="51"/>
-</package>
 <package name="PAD-2X3MM">
 <smd name="P$1" x="0" y="0" dx="3" dy="2" layer="1"/>
 </package>
@@ -1533,18 +1519,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="D-ZENER">
-<wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="1.905" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="-1.905" x2="2.032" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="1.905" x2="0.762" y2="1.905" width="0.254" layer="94"/>
-<text x="-2.9464" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.4704" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="PAD">
 <wire x1="0" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
@@ -2562,22 +2536,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-ZENER" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="D-ZENER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603/SOD-523" package="SOD523">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PAD">
 <gates>
 <gate name="G$1" symbol="PAD" x="0" y="0"/>
@@ -9205,6 +9163,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="BlueRobotics-Main">
 <packages>
+<package name="SC70-5L">
+<description>&lt;b&gt;SC-70 Package&lt;/b&gt;</description>
+<wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="0.5" x2="1.1" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
+<circle x="-0.65" y="-0.15" radius="0.15" width="0" layer="21"/>
+<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<text x="-1.5875" y="-0.635" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.2225" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER_L">
@@ -10220,6 +10198,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.889496875" y1="24.77261875" x2="5.300971875" y2="24.78785625" layer="94"/>
 <text x="1.77291875" y="6.583678125" size="2.54" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="LD2980">
+<pin name="EN" x="-5.08" y="0" length="middle"/>
+<pin name="VIN" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND" x="10.16" y="-7.62" length="middle" rot="R90"/>
+<pin name="VOUT" x="25.4" y="5.08" length="middle" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<text x="0.254" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-BLUEROBOTICS" prefix="FRAME" uservalue="yes">
@@ -10231,6 +10220,24 @@ LETTER landscape</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREG-MIC5365">
+<gates>
+<gate name="G$1" symbol="LD2980" x="-10.16" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SC70-5L">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -10249,11 +10256,6 @@ LETTER landscape</description>
 </class>
 </classes>
 <parts>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0402" value="0.1uF"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0402" value="1K"/>
-<part name="U$2" library="BR-Eagle-Library" deviceset="DIODE-ZENER" device="0603/SOD-523" value="3.3V 100mW"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="BSS138"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
@@ -10261,7 +10263,6 @@ LETTER landscape</description>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="BSS138"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD523"/>
 <part name="U$3" library="BR-Eagle-Library" deviceset="PAD" device="1.5X3MM"/>
 <part name="U$4" library="BR-Eagle-Library" deviceset="PAD" device="1.5X3MM"/>
 <part name="U$5" library="BR-Eagle-Library" deviceset="PAD" device="1.5X3MM"/>
@@ -10272,22 +10273,24 @@ LETTER landscape</description>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
+<part name="C2" library="resistor" deviceset="C-EU" device="C0402" value="1uF"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD523"/>
+<part name="U$1" library="BlueRobotics-Main" deviceset="VREG-MIC5365" device=""/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0402" value="1uF"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="52.578" y="-61.722" size="3.81" layer="94">Celsius Temperature Sensor</text>
 <text x="-33.02" y="2.54" size="2.54" layer="94" align="center">Level Converters for 5V Tolerance</text>
-<text x="-18.288" y="45.466" size="2.54" layer="94" align="center">5V Tolerant Supply</text>
 <text x="83.82" y="2.54" size="2.54" layer="94" align="center">Solder Pad Connections</text>
-<text x="25.4" y="71.12" size="2.54" layer="94" align="center">TSYS01 Circuit, Supply, and Address Selection</text>
+<text x="58.42" y="71.12" size="2.54" layer="94" align="center">TSYS01 &amp; Address Selection</text>
+<text x="-35.56" y="71.12" size="2.54" layer="94" align="center">Power Supply</text>
+<text x="-17.78" y="43.18" size="1.778" layer="97">MIC5365</text>
 </plain>
 <instances>
-<instance part="C1" gate="G$1" x="22.86" y="45.72"/>
-<instance part="R1" gate="G$1" x="-5.08" y="55.88"/>
-<instance part="U$2" gate="G$1" x="7.62" y="43.18" rot="R90"/>
-<instance part="GND1" gate="1" x="7.62" y="35.56"/>
-<instance part="GND2" gate="1" x="22.86" y="35.56"/>
 <instance part="GND3" gate="1" x="40.64" y="33.02"/>
 <instance part="Q1" gate="G$1" x="-35.56" y="-22.86" rot="R270"/>
 <instance part="R2" gate="G$1" x="-50.8" y="-15.24" rot="R90"/>
@@ -10295,7 +10298,6 @@ LETTER landscape</description>
 <instance part="Q2" gate="G$1" x="-35.56" y="-58.42" rot="R270"/>
 <instance part="R4" gate="G$1" x="-50.8" y="-50.8" rot="R90"/>
 <instance part="R5" gate="G$1" x="-20.32" y="-50.8" rot="R90"/>
-<instance part="D1" gate="G$1" x="-27.94" y="55.88"/>
 <instance part="U$3" gate="G$1" x="88.9" y="-5.08"/>
 <instance part="U$4" gate="G$1" x="88.9" y="-12.7"/>
 <instance part="U$5" gate="G$1" x="88.9" y="-20.32"/>
@@ -10309,21 +10311,18 @@ LETTER landscape</description>
 </instance>
 <instance part="GND4" gate="1" x="106.68" y="38.1"/>
 <instance part="R6" gate="G$1" x="106.68" y="63.5" rot="R90"/>
+<instance part="C2" gate="G$1" x="7.62" y="48.26"/>
+<instance part="GND5" gate="1" x="-22.86" y="35.56"/>
+<instance part="GND6" gate="1" x="7.62" y="35.56"/>
+<instance part="D2" gate="G$1" x="-68.58" y="55.88"/>
+<instance part="U$1" gate="G$1" x="-33.02" y="50.8"/>
+<instance part="C3" gate="G$1" x="-53.34" y="48.26"/>
+<instance part="GND7" gate="1" x="-53.34" y="35.56"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="38.1" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="22.86" y1="40.64" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <wire x1="83.82" y1="-5.08" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
 <label x="71.12" y="-5.08" size="1.778" layer="95"/>
@@ -10339,6 +10338,21 @@ LETTER landscape</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="40.64" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="7.62" y1="43.18" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-22.86" y1="38.1" x2="-22.86" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="-53.34" y1="38.1" x2="-53.34" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_LV" class="0">
@@ -10411,18 +10425,9 @@ LETTER landscape</description>
 <label x="-63.5" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="C"/>
-<wire x1="40.64" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="55.88" x2="0" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="45.72" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<junction x="7.62" y="55.88"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="48.26" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
-<junction x="22.86" y="55.88"/>
-<label x="15.24" y="55.88" size="1.778" layer="95"/>
+<wire x1="40.64" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="30.48" y="55.88" size="1.778" layer="95"/>
 <pinref part="U$8" gate="G$1" pin="VDD"/>
 <pinref part="U$8" gate="G$1" pin="PS"/>
 <wire x1="43.18" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
@@ -10434,6 +10439,13 @@ LETTER landscape</description>
 <wire x1="106.68" y1="68.58" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <label x="99.06" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="7.62" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="50.8" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<label x="0" y="55.88" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10450,10 +10462,19 @@ LETTER landscape</description>
 <label x="-10.16" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="55.88" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
-<label x="-17.78" y="55.88" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-38.1" y1="55.88" x2="-40.64" y2="55.88" width="0.1524" layer="91"/>
+<label x="-58.42" y="55.88" size="1.778" layer="95"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="U$1" gate="G$1" pin="EN"/>
+<wire x1="-40.64" y1="55.88" x2="-53.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="55.88" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="50.8" x2="-40.64" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-40.64" y="55.88"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-53.34" y1="50.8" x2="-53.34" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-53.34" y="55.88"/>
 </segment>
 </net>
 <net name="SCL_HV" class="0">
@@ -10474,14 +10495,14 @@ LETTER landscape</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="-30.48" y1="55.88" x2="-38.1" y2="55.88" width="0.1524" layer="91"/>
-<label x="-38.1" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="83.82" y1="-12.7" x2="71.12" y2="-12.7" width="0.1524" layer="91"/>
 <label x="71.12" y="-12.7" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="PAD"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="-71.12" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
+<label x="-78.74" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
