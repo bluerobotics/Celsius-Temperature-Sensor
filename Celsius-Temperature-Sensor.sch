@@ -10235,8 +10235,8 @@ LETTER landscape</description>
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="4"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10306,11 +10306,11 @@ LETTER landscape</description>
 <instance part="FRAME1" gate="G$2" x="50.8" y="-88.9"/>
 <instance part="U$7" gate="G$1" x="127" y="78.74"/>
 <instance part="U$8" gate="G$1" x="48.26" y="35.56"/>
-<instance part="SJ1" gate="G$1" x="106.68" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="104.14" y="45.72" size="1.778" layer="95" rot="R90"/>
+<instance part="SJ1" gate="G$1" x="106.68" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="104.14" y="60.96" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="GND4" gate="1" x="106.68" y="38.1"/>
-<instance part="R6" gate="G$1" x="106.68" y="63.5" rot="R90"/>
+<instance part="R6" gate="G$1" x="106.68" y="48.26" rot="R90"/>
 <instance part="C2" gate="G$1" x="7.62" y="48.26"/>
 <instance part="GND5" gate="1" x="-22.86" y="35.56"/>
 <instance part="GND6" gate="1" x="7.62" y="35.56"/>
@@ -10335,11 +10335,6 @@ LETTER landscape</description>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="40.64" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="7.62" y1="43.18" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
@@ -10353,6 +10348,11 @@ LETTER landscape</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-53.34" y1="38.1" x2="-53.34" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_LV" class="0">
@@ -10435,10 +10435,10 @@ LETTER landscape</description>
 <junction x="40.64" y="55.88"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="68.58" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <label x="99.06" y="71.12" size="1.778" layer="95"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="68.58" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
@@ -10519,9 +10519,9 @@ LETTER landscape</description>
 <pinref part="U$8" gate="G$1" pin="CSB"/>
 <wire x1="76.2" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <label x="83.82" y="55.88" size="1.778" layer="95"/>
-<pinref part="SJ1" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="53.34" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="55.88" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
 <junction x="106.68" y="55.88"/>
 </segment>
