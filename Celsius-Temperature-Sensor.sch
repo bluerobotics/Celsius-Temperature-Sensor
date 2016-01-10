@@ -9931,6 +9931,8 @@ LETTER landscape</description>
 <text x="58.42" y="71.12" size="2.54" layer="94" align="center">TSYS01 &amp; Address Selection</text>
 <text x="-35.56" y="71.12" size="2.54" layer="94" align="center">Power Supply</text>
 <text x="-17.78" y="43.18" size="1.778" layer="97">MIC5365</text>
+<text x="114.3" y="53.34" size="1.778" layer="97">Pull-down sets default
+address to 0x77</text>
 </plain>
 <instances>
 <instance part="GND3" gate="1" x="40.64" y="33.02"/>
@@ -10171,4 +10173,10 @@ LETTER landscape</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
