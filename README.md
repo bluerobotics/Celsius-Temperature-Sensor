@@ -21,7 +21,7 @@ The sensor is the Measurement Specialties TSYS01, It comes standard with a 4-pin
 
 ## Compatibility
 
-The Bar30 sensor is compatible with any device with 3.3V I<sup>2</sup>C logic. When using with a 5V device, such as an Arduino Uno, it is necessary to use a logic level converter.
+The Celsius sensor is compatible with any device with 3.3V I<sup>2</sup>C logic. When using with a 5V device, such as an Arduino Uno, it is necessary to use a logic level converter.
 
 ##Configuration
 
