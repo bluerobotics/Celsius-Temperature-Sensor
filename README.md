@@ -1,11 +1,8 @@
-# Celsius-Temperature-Sensor
+# Celsius Temperature Sensor
 
-
-Arduino software library is available [here](http://github.com/bluerobotics/BlueRobotics_MS5837_Library/).
+Arduino software library is available [here](http://github.com/bluerobotics/BlueRobotics_TSYS01_Library/).
 
 The schematic and board layout are designed in EagleCAD.
-
-# Hardware
 
 ## Description
 
