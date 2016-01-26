@@ -30,22 +30,25 @@ For further information please see the [TSYS01 Data Sheet](http://meas-spec.com/
 
 **Electrical:**
 
-| **Item** | **Condition** | **Value** |
-| Supply Voltage| -- | 3.3 to 5.5 volts |
-| I<sup>2</sup>C Logic Voltage (SDA and SCL) | -- | 3.3 volts |
-| Peak Current   | -- | 1.4 mA   |
+| **Item**       | **Condition**   | **Value**           |
+| ---: | :---: | --- |
+| Supply Voltage | -              | 3.3 to 5.5 volts    |
+| I<sup>2</sup>C Logic Voltage (SDA and SCL) | - | 3.3 volts |
+| Peak Current   | - | 1.4 mA   |
 
 **Temperature:**
 
 | **Item** | **Condition** | **Value** |
-| Operating Temperature | -- | -40 to +125&deg;C |
-|Storage Temperature | -- | -55 to +150&deg;C                        |
+| ---: | :---: | --- |
+| Operating Temperature | - | -40 to +125&deg;C |
+|Storage Temperature | - | -55 to +150&deg;C                        |
 |Absolute Accuracy   | From -5 to 50&deg;C | +/- 0.1&deg;C      |
 |                    | From -40 to 125&deg;C |  +/- 0.5&deg;C   |
 
 **Physical:**
 
 | **Item**       | **Condition** |
+| ---: | :---: | --- |
 | Wire Colors    | Green - I<sup>2</sup>C Clock (SCL, 3.3V) |
 |                | White - I<sup>2</sup>C Data (SDA, 3.3V)  |
 |                | Red - Positive (3.3-5.5V) |
