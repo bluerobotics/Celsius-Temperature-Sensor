@@ -28,32 +28,32 @@ The sensor is mounted on a PCB that extends into the water and is sealed from wa
 
 For further information please see the [TSYS01 Data Sheet](http://meas-spec.com/downloads/TSYS01_Digital_Temperature_Sensor.pdf).
 
-|      **Electrical**       |
-| ------------- | --------- |
+**Electrical:**
+
 | **Item** | **Condition** | **Value** |
 | Supply Voltage| -- | 3.3 to 5.5 volts |
 | I<sup>2</sup>C Logic Voltage (SDA and SCL) | -- | 3.3 volts |
 | Peak Current   | -- | 1.4 mA   |
-| ------------- | --------- |
 
-|            **Temperature**            			 |
-| ------------- | ------------- | ------------- |
+**Temperature:**
+
 | **Item** | **Condition** | **Value** |
 | Operating Temperature | -- | -40 to +125&deg;C |
 |Storage Temperature | -- | -55 to +150&deg;C                        |
 |Absolute Accuracy   | From -5 to 50&deg;C | +/- 0.1&deg;C      |
 |                    | From -40 to 125&deg;C |  +/- 0.5&deg;C   |
-|  **Physical**  |
-| Wire Colors | Green - I<sup>2</sup>C Clock (SCL, 3.3V) |
-|             | White - I<sup>2</sup>C Data (SDA, 3.3V)  |
-|             | Red - Positive (3.3-5.5V) |
-|             | Black - Ground          |
-| ------------|-------------------------|
+
+**Physical:**
+
+| **Item**       | **Condition** |
+| Wire Colors    | Green - I<sup>2</sup>C Clock (SCL, 3.3V) |
+|                | White - I<sup>2</sup>C Data (SDA, 3.3V)  |
+|                | Red - Positive (3.3-5.5V) |
+|                | Black - Ground          |
 | Overall Length | 56.1 mm |
 | Thread Size    | M10x1.5 20 mm threaded |
 | Recommended Through Hole Size | 10-11 mm |
-| Wrench Flats | 16 mm |
-|---------------------------------------------|
+| Wrench Flats   | 16 mm |
 
 ##Physical Specifications
 
