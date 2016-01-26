@@ -70,5 +70,7 @@ The Celsius Pressure Sensor Hardware Design is released under the MIT License.
 ##Revision History
 
 0.0 - Under development
+
 0.1 - First production version (marked with rev3)
+
 0.2 - Minor layout changes (marked with rev4)
